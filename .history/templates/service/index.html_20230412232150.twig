@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{#
+{% block title %}Nos services{% endblock %}
+
+{% block body %}
+    <section class="bg-light p-3">
+        <h1>Les services</h1>
+    </section>
+
+    <section class="row">
+        {#{% for servic in service %}#}
+            <div class="col-4 mt-4">
+                <div class="border border-dark rounded p-2 clearfix">
+                    <h2>{{ servic.title }}</h2>
+                    <p>{{ servic.amount }} €</p>
+                    <img class="w-100" src="{{ asset('uploads/') ~ servic.image }}" alt="Image de {{ servic.title }}">
+                    <hr>
+                    <a href="{{path("cart_add", {id: servic.id})}}" class="btn btn-success">
+                        <i class="bi bi-cart-plus"></i> Ajouter
+                    </a>
+                </div>
+            </div>
+        {#{% endfor %}#}
+    </section>
+{#{% endblock %}
+#}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        <meta name ="viewport" content ="width = device-width, initial -scale=1.0" >
+        <!--               Feuilles de style             -->
+
+        <link rel = "stylesheet" href = "{{asset('assets/css/bootstrap.css') }}">
+        <link rel = "stylesheet" href = "{{asset('assets/css/bootstrap.css.map') }}">
+        <link rel = "stylesheet" href = "{{asset('assets/css/bootstrap.min.css') }}">
+        <link rel = "stylesheet" href = "{{asset('assets/css/bootstrap.min.css.map') }}">
+        <link rel = "stylesheet" href = "{{asset('assets/css/bootstrap.rtl.css') }}">
+        <link rel = "stylesheet" href = "{{asset('assets/css/bootstrap.rtl.css.map') }}">
+        <link rel = "stylesheet" href = "{{asset('assets/css/bootstrap.rtl.min.css') }}">
+        <link rel = "stylesheet" href = "{{asset('assets/css/bootstrap.rtl.min.css.map') }}">
+        <link rel = "stylesheet" href = "{{asset('assets/css/bootstrap-grid.css') }}">
+        <link rel = "stylesheet" href = "{{asset('assets/css/bootstrap-grid.css.map') }}">
+        <link rel = "stylesheet" href = "{{asset('assets/css/bootstrap-grid.min.css') }}">
+        <link rel = "stylesheet" href = "{{asset('assets/css/bootstrap-grid.min.css.map') }}">
+        <link rel = "stylesheet" href = "{{asset('assets/css/bootstrap-grid.rtl.css') }}">
+        <link rel = "stylesheet" href = "{{asset('assets/css/bootstrap-grid.rtl.css.map') }}">
+        <link rel = "stylesheet" href = "{{asset('assets/css/bootstrap-grid.rtl.min.css') }}">
+        <link rel = "stylesheet" href = "{{asset('assets/css/bootstrap-grid.rtl.min.css.map') }}">
+        <link rel = "stylesheet" href = "{{asset('assets/css/bootstrap-reboot.css') }}">
+        <link rel = "stylesheet" href = "{{asset('assets/css/bootstrap-reboot.css.map') }}">
+        <link rel = "stylesheet" href = "{{asset('assets/css/bootstrap-reboot.min.css') }}">
+        <link rel = "stylesheet" href = "{{asset('assets/css/bootstrap-reboot.min.css.map') }}">
+        <link rel = "stylesheet" href = "{{asset('assets/css/bootstrap-reboot.rtl.css') }}">
+        <link rel = "stylesheet" href = "{{asset('assets/css/bootstrap-reboot.rtl.css.map') }}">
+        <link rel = "stylesheet" href = "{{asset('assets/css/bootstrap-reboot.rtl.min.css') }}">
+        <link rel = "stylesheet" href = "{{asset('assets/css/bootstrap-reboot.rtl.min.css.map') }}">
+        <link rel = "stylesheet" href = "{{asset('assets/css/bootstrap-utilities.css') }}">
+        <link rel = "stylesheet" href = "{{asset('assets/css/bootstrap-utilities.css.map') }}">
+        <link rel = "stylesheet" href = "{{asset('assets/css/bootstrap-utilities.min.css') }}">
+        <link rel = "stylesheet" href = "{{asset('assets/css/bootstrap-utilities.min.css.map') }}">
+        <link rel = "stylesheet" href = "{{asset('assets/css/bootstrap-utilities.rtl.css') }}">
+        <link rel = "stylesheet" href = "{{asset('assets/css/bootstrap-utilities.rtl.css.map') }}">
+        <link rel = "stylesheet" href = "{{asset('assets/css/bootstrap-utilities.rtl.min.css') }}">
+        <link rel = "stylesheet" href = "{{asset('assets/css/bootstrap-utilities.rtl.min.css.map') }}">
+
+        {% block stylesheets %}<link rel = "stylesheet" href = "{{asset('assets/css/style.css') }}"> {% endblock %}
+
+        <!--                Fichier script                 -->
+
+        <script src = "{{asset('assets/js/bootstrap.bundle.js')}}" defer ></script>
+        <script src = "{{asset('assets/js/bootstrap.bundle.js.map')}}" defer ></script>
+        <script src = "{{asset('assets/js/bootstrap.bundle.min.js')}}" defer ></script>
+        <script src = "{{asset('assets/js/bootstrap.bundle.min.js.map')}}" defer ></script>
+        <script src = "{{asset('assets/js/bootstrap.esm.js')}}" defer ></script>
+        <script src = "{{asset('assets/js/bootstrap.esm.js.map')}}" defer ></script>
+        <script src = "{{asset('assets/js/bootstrap.esm.min.js')}}" defer ></script>
+        <script src = "{{asset('assets/js/bootstrap.esm.min.js.map')}}" defer ></script>
+        <script src = "{{asset('assets/js/bootstrap.js')}}" defer ></script>
+        <script src = "{{asset('assets/js/bootstrap.js.map')}}" defer ></script>
+        <script src = "{{asset('assets/js/bootstrap.min.js')}}" defer ></script>
+        <script src = "{{asset('assets/js/bootstrap.min.js.map')}}" defer ></script>
+
+        {% block javascripts %} <script src = "{{asset('assets/js/script.js')}}" defer ></script>{% endblock %}
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+    </body>
+</html>
